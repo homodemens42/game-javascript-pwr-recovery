@@ -98,7 +98,7 @@ function tutorialNext(){if(!isTutorial())return;tutorialStep++;
  else if(tutorialStep===10)showTutorial('索引から「コマンド — CONTROL」を開いてください。','selector:[data-page="cmd-control"]');
  else if(tutorialStep===11)showTutorial('CONTROL REACTOR TRIP を実行してください。直接入力でも、強調されたボタンをクリックして入力欄へ挿入しても構いません。','selector:[data-command="CONTROL REACTOR TRIP"]');
  else if(tutorialStep===12)showTutorial('続いて故障したRCP-Aを停止します。CONTROL RCP-A STOP を実行してください。入力方法はどちらでも構いません。','selector:[data-command="CONTROL RCP-A STOP"]');
- else if(tutorialStep===13)showTutorial('操作は完了です。設備のACTUAL状態と温度が安全側へ収束するまで、STATUS / READで確認しながら待ってください。','time');
+ else if(tutorialStep===13)showTutorial('操作は完了です。設備のACTUAL状態と温度が安全側へ収束するまで、STATUS / READで確認しながら待ってください。↑キーを押すと、以前入力したコマンドを呼び出せます。','time');
 }
 function tutorialOnCommandExecuted(up){if(!isTutorial())return;
  if(tutorialStep===3&&up==='STATUS')tutorialJump(4);
