@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PWR Unknown System Recovery Prototype v0.7.0-pre.1</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="app" class="app">
+  <section class="terminal-panel">
+    <header><span>MAINTENANCE TERMINAL // PLANT-01</span><span id="timeStatus" class="time-status"><span>PLANT TIME&nbsp;&nbsp;--:--</span><span>TIME LIMIT&nbsp;&nbsp;--:--</span></span></header>
+    <div id="terminalOut" class="terminal-body"></div>
+    <div class="promptline"><span>&gt;</span><input id="commandInput" autocomplete="off" spellcheck="false"><button id="executeBtn">EXECUTE</button></div>
+  </section>
+  <section class="right-panel">
+    <header><span id="rightTitle">STAGE SELECT</span><button id="returnStageBtn" class="small hidden">STAGE SELECT</button></header>
+    <div id="rightBody" class="right-body"></div>
+  </section>
+</div>
+<script src="js/stages.js"></script>
+<script src="js/commands.js"></script>
+<script src="js/manual.js"></script>
+<script src="js/game.js"></script>
+</body>
+</html>
